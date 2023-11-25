@@ -14,7 +14,7 @@ module.exports = {
       },
     },
     screens: {
-      mobile: { max: "744px" },
+      //mobile: { max: "900px" },
     },
   },
   plugins: [],
