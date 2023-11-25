@@ -91,8 +91,10 @@ export default function Home() {
   const handleSwipe = (direction: string) => {
     if (direction === "left" && activeSlide < slider.length) {
       $activeSlide(activeSlide + 1);
+      $rightAnimation(false);
     } else if (direction === "right" && activeSlide > 1) {
       $activeSlide(activeSlide - 1);
+      $rightAnimation(true);
     }
   };
 
