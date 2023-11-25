@@ -5,8 +5,8 @@
 body {
   min-width: 1330px;
 
-  @media (max-width: 744px) {
-    min-width: 0px;
+  @media (max-width: 900px) {
+    min-width: 375px;
   }
 }
 
