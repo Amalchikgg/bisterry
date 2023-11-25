@@ -6,7 +6,7 @@ body {
   min-width: 1330px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 744px) {
   body {
     min-width: 375px;
   }
