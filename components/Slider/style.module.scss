@@ -1,0 +1,37 @@
+.animate {
+  opacity: 0;
+  transform: translateX(-100px); /* начальное смещение влево */
+
+  animation: fadeInFromLeft 1s ease-out forwards;
+}
+
+.animate_right {
+  opacity: 0;
+  transform: translateX(100px); /* начальное смещение вправо */
+
+  animation: fadeInFromRight 1s ease-out forwards;
+}
+
+@keyframes fadeInFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInFromRight {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
