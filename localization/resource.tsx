@@ -98,7 +98,7 @@ const resource = {
         "В сферу наших компетенций входит также маркетинг по электронной почте. Мы предоставляем услуги по созданию и реализации эффективных email-кампаний, направленных на укрепление связи с вашей аудиторией. Наша команда разработает персонализированный контент, который поможет заинтересовать и увлечь ваших клиентов, повысить конверсию и укрепить лояльность к бренду.",
       serviceTitle6: "",
       serviceText6:
-        "В сферу наших компетенций входит также маркетинг по электронной почте. Мы предоставляем услуги по созданию и реализации эффективных email-кампаний, направленных на укрепление связи с вашей аудиторией. Наша команда разработает персонализированный контент, который поможет заинтересовать и увлечь ваших клиентов, повысить конверсию и укрепить лояльность к бренду.",
+        "Создайте своё будущее с криптовалютой — новой эрой финансов! Откройте для себя мир неограниченных возможностей с нашими передовыми криптовалютными сервисами. Наша платформа предлагает простой и безопасный доступ к миру цифровых валют, где конфиденциальность, скорость и надёжность встречаются вместе.",
       startProject: "Начать работать с нами",
       sliderTitle1: "Недвижимость",
       sliderText1:
@@ -274,7 +274,7 @@ const resource = {
         "Our competences also cover the field of email marketing. We provide services to create and implement effective email campaigns aimed at strengthening the connection with your audience. Our team will develop personalised content that will help keep your customers interested and engaged, as well as increase conversions and build brand loyalty.",
       serviceTitle6: "",
       serviceText6:
-        "Our competences also cover the field of email marketing. We provide services to create and implement effective email campaigns aimed at strengthening the connection with your audience. Our team will develop personalised content that will help keep your customers interested and engaged, as well as increase conversions and build brand loyalty.",
+        "Shape your future with cryptocurrency — the new era of finance! Discover a world of unlimited possibilities with our cutting-edge cryptocurrency services. Our platform offers a simple and secure gateway to the digital currency world, where privacy, speed, and reliability converge.",
       ourServicesText:
         "We offer comprehensive marketing solutions including strong brand building, effective online promotion, website and lendings development as well as email marketing strategies and SEO optimisation.",
       effectiveText:
