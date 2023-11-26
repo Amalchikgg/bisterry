@@ -97,7 +97,7 @@ const Burger = () => {
         </p>
 
         <div
-          className={`${
+          className={`flex flex-col ${
             open ? styles.dropdown_open : styles.transition_dropdown
           }`}
         >
@@ -106,7 +106,9 @@ const Burger = () => {
               onClick={handleActive}
               href={link}
               key={link}
-              className={`text-[#AAAAAA] font-semibold block text-[24px] mb-6 hover:text-[#5390D9] ${
+              className={`text-[#AAAAAA] font-semibold text-[24px] ${
+                !open && "hidden"
+              } mb-6 hover:text-[#5390D9] ${
                 pathname.includes(`${link}`) && "!text-[#5390D9]"
               }`}
             >
