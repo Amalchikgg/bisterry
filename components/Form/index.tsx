@@ -33,7 +33,11 @@ const Form = () => {
     }
   };
   return (
-    <form ref={form} onSubmit={sendEmail} className='mb-[169px] mobile:mb-14'>
+    <form
+      ref={form}
+      onSubmit={sendEmail}
+      className='mb-[169px] mobile:mb-14 mobile:-mt-10'
+    >
       <div className='flex justify-between items-center mb-[65px] mobile:mb-5 mobile:flex-col mobile:w-full'>
         <p className='text-[#023047] font-semibold text-[85px] mobile:text-[28px] w-[607px] mobile:w-auto mobile:mb-5 leading-[1.2]'>
           {t("formText")}

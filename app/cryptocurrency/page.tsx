@@ -19,15 +19,15 @@ const Cryptocurrency = () => {
       </div>
       <div className='h-[430px] mb-[27px] relative mobile:h-[340px]'>
         <div className='absolute top-0 bg-[#000814] h-[351px] mobile:rounded-b-[0] mobile:h-[301px] mobile:p-[20px] pl-[60px] pt-[45px] pb-[54px] rounded-[30px] w-full z-20'>
-          <p className='text-white text-[85px] font-semibold mb-7 mobile:text-[32px] mobile:mb-3 leading-[1]'>
-            {t("tailored")}
+          <p className='text-white text-[64px] font-semibold mb-7 mobile:text-[26px] mobile:mb-3 leading-[1]'>
+            {t("cryptocurrencyTitle1")}
           </p>
           <p className='text-[24px] text-white mobile:text-[16px]'>
-            {t("email1")}
+            {t("cryptocurrencyText1")}
           </p>
         </div>
         <Image
-          src={"/images/email1.png"}
+          src={"/images/crypto1.png"}
           alt='socmedia'
           width={1332}
           height={331}
@@ -36,15 +36,15 @@ const Cryptocurrency = () => {
       </div>
       <div className='h-[430px] mb-[27px] relative mobile:h-[340px]'>
         <div className='absolute top-0 bg-[#01388B] h-[351px] mobile:rounded-b-[0] mobile:h-[301px] mobile:p-[20px] pl-[60px] pt-[45px] pb-[54px] rounded-[30px] w-full z-20'>
-          <p className='text-white text-[85px] font-semibold mb-7 mobile:text-[32px] mobile:mb-3 leading-[1]'>
-            {t("engaging")}
+          <p className='text-white text-[64px] font-semibold mb-7 mobile:text-[32px] mobile:mb-3 leading-[1]'>
+            {t("cryptocurrencyTitle2")}
           </p>
-          <p className='text-[24px] text-white mobile:text-[16px]'>
-            {t("email2")}
+          <p className='text-[24px] text-white mobile:text-[16px] pr-20 mobile:pr-0'>
+            {t("cryptocurrencyText2")}
           </p>
         </div>
         <Image
-          src={"/images/email2.png"}
+          src={"/images/crypto2.png"}
           alt='socmedia'
           width={1332}
           height={331}
@@ -54,14 +54,14 @@ const Cryptocurrency = () => {
       <div className='h-[430px] mb-[27px] relative mobile:h-[340px]'>
         <div className='absolute top-0 bg-[#0960E3] h-[351px] mobile:rounded-b-[0] mobile:h-[301px] mobile:p-[20px] pl-[60px] pt-[45px] pb-[54px] rounded-[30px] w-full z-20'>
           <p className='text-white text-[85px] font-semibold mb-7 mobile:text-[32px] mobile:mb-3 leading-[1]'>
-            {t("segmented")}
+            {t("cryptocurrencyTitle3")}
           </p>
           <p className='text-[24px] text-white mobile:text-[16px]'>
-            {t("email3")}
+            {t("cryptocurrencyText3")}
           </p>
         </div>
         <Image
-          src={"/images/email3.png"}
+          src={"/images/crypto3.png"}
           alt='socmedia'
           width={1332}
           height={331}
@@ -71,14 +71,14 @@ const Cryptocurrency = () => {
       <div className='h-[430px] mb-[27px] relative mobile:h-[340px]'>
         <div className='absolute top-0 bg-[#5390D9] h-[351px] mobile:rounded-b-[0] mobile:h-[310px] mobile:p-[20px] pl-[60px] pt-[45px] pb-[54px] rounded-[30px] w-full z-20'>
           <p className='text-white text-[85px] font-semibold mb-7 mobile:text-[32px] mobile:mb-3 leading-[1]'>
-            {t("automated")}
+            {t("cryptocurrencyTitle4")}
           </p>
           <p className='text-[24px] text-white mobile:text-[16px]'>
-            {t("email4")}
+            {t("cryptocurrencyText4")}
           </p>
         </div>
         <Image
-          src={"/images/email4.png"}
+          src={"/images/crypto4.png"}
           alt='socmedia'
           width={1332}
           height={331}
@@ -88,14 +88,14 @@ const Cryptocurrency = () => {
       <div className='h-[430px] mb-[90px] relative mobile:h-[340px]'>
         <div className='absolute top-0 bg-[#000814] h-[351px] mobile:rounded-b-[0] mobile:h-[310px] mobile:p-[20px] pl-[60px] pt-[45px] pb-[54px] rounded-[30px] w-full z-20'>
           <p className='text-white text-[85px] font-semibold mb-7 mobile:text-[32px] mobile:mb-3 leading-[1]'>
-            {t("dataDriven")}
+            {t("cryptocurrencyTitle5")}
           </p>
           <p className='text-[24px] text-white mobile:text-[16px]'>
-            {t("email5")}
+            {t("cryptocurrencyText5")}
           </p>
         </div>
         <Image
-          src={"/images/email5.png"}
+          src={"/images/crypto5.png"}
           alt='socmedia'
           width={1332}
           height={331}

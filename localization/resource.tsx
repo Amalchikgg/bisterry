@@ -160,10 +160,41 @@ const resource = {
         "Мы оптимизируем ваши кампании с помощью автоматизированных рабочих процессов: от приветствия новых подписчиков до работы с потенциальными клиентами. Наша автоматизация повышает эффективность, вовлеченность и обеспечивает бесперебойную работу с пользователями.",
       email5:
         "С помощью подробной аналитики и отчетов мы отслеживаем эффективность рассылки, предоставляя оперативные данные для оптимизации стратегии и получения измеримых результатов, обеспечивая развитие вашего email-маркетинга в соответствии с потребностями вашей аудитории.",
+      cryptocurrencyTitle1: "Блокчейн-Разработка",
+      cryptocurrencyText1:
+        "Предложение услуг по разработке индивидуальных блокчейн-решений для проектов, включая создание смарт-контрактов, разработку цифровых токенов, и интеграцию существующих систем с блокчейн-технологиями.",
+      cryptocurrencyTitle2: "Крипто Маркетинг",
+      cryptocurrencyText2:
+        "Разработка и реализация комплексных маркетинговых стратегий, нацеленных на увеличение видимости проекта в криптовалютном сообществе, включая SMM, контент-маркетинг, и работу с влиятельными личностями в крипто-сообществе.",
+      cryptocurrencyTitle3: "ICO/STO/IEO Поддержка",
+      cryptocurrencyText3:
+        "Помощь в организации и проведении первичных предложений монет (ICO), предложений безопасности токенов (STO) или первоначальных биржевых предложений (IEO), включая юридическую поддержку, разработку токеномики, и стратегии по привлечению инвесторов.",
+      cryptocurrencyTitle4: "Крипто Консалтинг",
+      cryptocurrencyText4:
+        "Предоставление экспертных знаний и консультаций по всем аспектам криптовалют и блокчейн-технологий, включая рыночный анализ, тренды развития технологий, и наилучшие практики в области безопасности и регулирования.",
+      cryptocurrencyTitle5: "Решения и Интеграция",
+      cryptocurrencyText5:
+        "Предложение технологических решений, включая разработку криптовалютных кошельков, интеграцию платежных систем, и создание индивидуализированных блокчейн-платформ для улучшения операционной эффективности проектов.",
     },
   },
   en: {
     translation: {
+      cryptocurrencyTitle1:
+        "Blockchain Technology Development and Implementation",
+      cryptocurrencyText1:
+        "Offering services for the development of bespoke blockchain solutions for projects, including the creation of smart contracts, development of digital tokens, and integration of existing systems with blockchain technologies.",
+      cryptocurrencyTitle2: "Cryptocurrency Marketing and PR",
+      cryptocurrencyText2:
+        "Developing and implementing comprehensive marketing strategies aimed at increasing the project's visibility in the cryptocurrency community, including social media marketing, content marketing, and engagement with influencers in the crypto space.",
+      cryptocurrencyTitle3: "ICO/STO/IEO Support",
+      cryptocurrencyText3:
+        "Assisting in organizing and conducting Initial Coin Offerings (ICO), Security Token Offerings (STO), or Initial Exchange Offerings (IEO), including legal support, tokenomics development, and strategies for attracting investors.",
+      cryptocurrencyTitle4: "Cryptocurrency and Blockchain Consulting Services",
+      cryptocurrencyText4:
+        "Providing expert knowledge and consultations on all aspects of cryptocurrencies and blockchain technology, including market analysis, technology development trends, and best practices in security and regulation.",
+      cryptocurrencyTitle5: "Technological Solutions and Integration",
+      cryptocurrencyText5:
+        "Offering technological solutions, including the development of cryptocurrency wallets, payment system integration, and the creation of customized blockchain platforms for enhancing the operational efficiency of projects.",
       formSubmit: "Your request has been send",
       digital1:
         "We create integrated strategies that encompass the full spectrum of Digital Marketing. Our experts develop plans that combine SEO optimization, content marketing, social media, and more technical aspects to provide your business with well-rounded support.",

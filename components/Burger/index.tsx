@@ -4,9 +4,11 @@ import Image from "next/image";
 import { useTranslation } from "react-i18next";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import styles from "./style.module.scss";
 
 const Burger = () => {
   const [active, $active] = useState(false);
+  const [open, $open] = useState(false);
   const { t, i18n } = useTranslation();
   const pathname = usePathname();
   const links = [
@@ -40,6 +42,9 @@ const Burger = () => {
 
   const changeLanguage = (language: string) => () => {
     i18n.changeLanguage(language);
+  };
+  const handleOpen = () => {
+    $open(!open);
   };
   const handleActive = () => {
     $active(!active);
@@ -84,19 +89,31 @@ const Burger = () => {
         >
           {t("aboutUs")}
         </Link>
-        <p className='text-[24px] text-white font-bold mb-6'>{t("services")}</p>
-        {links.map(({ title, link }) => (
-          <Link
-            onClick={handleActive}
-            href={link}
-            key={link}
-            className={`text-[#AAAAAA] font-semibold block text-[24px] mb-6 hover:text-[#5390D9] ${
-              pathname.includes(`${link}`) && "!text-[#5390D9]"
-            }`}
-          >
-            {title}
-          </Link>
-        ))}
+        <p
+          className='text-[24px] text-white font-bold mb-6'
+          onClick={handleOpen}
+        >
+          {t("services")}
+        </p>
+
+        <div
+          className={`${
+            open ? styles.dropdown_open : styles.transition_dropdown
+          }`}
+        >
+          {links.map(({ title, link }) => (
+            <Link
+              onClick={handleActive}
+              href={link}
+              key={link}
+              className={`text-[#AAAAAA] font-semibold block text-[24px] mb-6 hover:text-[#5390D9] ${
+                pathname.includes(`${link}`) && "!text-[#5390D9]"
+              }`}
+            >
+              {title}
+            </Link>
+          ))}
+        </div>
         <div className='flex flex-col mb-10'>
           <p
             onClick={changeLanguage("ru")}

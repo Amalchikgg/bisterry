@@ -128,7 +128,7 @@ export default function Home() {
   return (
     <Container>
       <main>
-        <section className='mt-[80px] mb-[46px] mobile:mb-4'>
+        <section className='mt-[80px] motion-safe:mt-10 mb-[46px] mobile:mb-4'>
           <p className='text-[#023047] text-center text-[60px] mobile:text-[32px] font-bold mb-5 mobile:mb-9'>
             {t("mainTitle")}{" "}
             <span className='text-[#5390D9]'>{t("yourBrand")}</span>{" "}
@@ -214,7 +214,7 @@ export default function Home() {
                 className='-mt-[128px]'
               />
             </div>
-            <div className='w-[475px] mobile:w-[340px] mb-4 mobile:h-[171px] h-[258px] rounded-[30px] mobile:px-6 bg-[#023047] px-[29px] pt-10 pb-[58px] mobile:pb-10 flex items-center flex-wrap justify-between gap-y-[30px]'>
+            <div className='w-[475px] mobile:w-[340px] mb-4 mobile:h-[171px] h-[258px] rounded-[30px] mobile:px-6 bg-[#023047] px-[29px] pt-10 mobile:pt-7   pb-[58px] mobile:pb-10 flex items-center flex-wrap justify-between gap-y-[30px]'>
               <div className='flex items-center'>
                 <p className='text-white text-[48px] mobile:text-[24px] font-extrabold'>
                   200+
@@ -419,7 +419,7 @@ export default function Home() {
             />
           </div>
         </section>
-        <section className='mb-[162px]'>
+        <section className='mb-[162px] mobile:mb-20'>
           <p className='text-center text-[64px] mobile:text-[32px] font-semibold text-[#000814] mb-[17px] mobile:mb-[25px]'>
             {t("ourFeedback")}
           </p>
