@@ -33,7 +33,7 @@ const Burger = () => {
       link: "/email",
     },
     {
-      title: "Cryptocurrency",
+      title: "Crypto & Trading Platforms",
       link: "/cryptocurrency",
     },
   ];
@@ -89,12 +89,17 @@ const Burger = () => {
         >
           {t("aboutUs")}
         </Link>
-        <p
-          className='text-[24px] text-white font-bold mb-6'
-          onClick={handleOpen}
-        >
-          {t("services")}
-        </p>
+        <div className='flex items-center mb-6' onClick={handleOpen}>
+          <p className='text-[24px] text-white font-bold mr-3'>
+            {t("services")}
+          </p>
+          <Image
+            src={"/icons/arrowDown.svg"}
+            alt='arrow'
+            width={20}
+            height={20}
+          />
+        </div>
 
         <div
           className={`flex flex-col ${

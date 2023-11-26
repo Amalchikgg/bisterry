@@ -10,7 +10,7 @@ const Cryptocurrency = () => {
   return (
     <Container>
       <p className='text-[#5390D9] text-center text-[96px] font-bold mb-[27px] mt-[100px] mobile:text-[32px] mobile:mt-10'>
-        Cryptocurrency
+        Crypto & <span className='text-[#000814]'>Trading</span>
       </p>
       <div className='flex justify-center mb-[81px] mobile:mb-5'>
         <p className='text-center text-[#000814] text-[24px] w-[725px] mobile:text-[18px]'>

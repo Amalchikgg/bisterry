@@ -1,11 +1,11 @@
 .transition_dropdown {
   height: 0px;
   opacity: 0;
-  transition: height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  transition: height 0.4s ease-in-out, opacity 0.4s ease-in-out;
 }
 
 .dropdown_open {
   height: auto;
   opacity: 1;
-  transition: height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  transition: height 0.4s ease-in-out, opacity 0.4s ease-in-out;
 }

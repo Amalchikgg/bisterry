@@ -62,7 +62,7 @@ export default function Home() {
       link: "/email",
     },
     {
-      title: "CRYPTOCURRENCY",
+      title: "CRYPTO & TRADING PLATFORMS",
       text: t("serviceText6"),
       link: "/cryptocurrency",
     },

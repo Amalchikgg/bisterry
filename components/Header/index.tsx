@@ -32,11 +32,10 @@ const Header = () => {
     },
     {
       title: "Email Marketing",
-      text: t("serviceText5"),
       link: "/email",
     },
     {
-      title: "Cryptocurrency",
+      title: "Crypto & Trading Platforms",
       link: "/cryptocurrency",
     },
   ];
