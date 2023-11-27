@@ -8,6 +8,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import styles from "./style.module.scss";
 import Burger from "../Burger";
+import Zoom from "react-reveal/Zoom";
 
 const Header = () => {
   const { t, i18n } = useTranslation();
@@ -111,14 +112,14 @@ const Header = () => {
               <div
                 className={`bg-[#023047] ${styles.transition_dropdown} ${
                   open ? styles.dropdown_open : ""
-                } rounded-[15px] absolute top-[65px] right-[-60px] p-[10px] flex flex-col w-[300px]`}
+                } rounded-[15px] z-50 absolute top-[65px] right-[-60px] p-[10px] flex flex-col w-[300px]`}
               >
                 {links.map(({ title, link }) => (
                   <Link
                     href={link}
                     key={link}
-                    className={`text-white font-semibold text-[20px] mb-3 hover:text-[blue] ${
-                      pathname.includes(link) && "!text-[blue]"
+                    className={`text-white font-semibold text-[20px] mb-3 hover:text-[#5390D9] ${
+                      pathname.includes(link) && "!text-[#5390D9]"
                     }`}
                   >
                     {title}

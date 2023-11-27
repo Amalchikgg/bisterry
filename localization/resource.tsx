@@ -99,7 +99,7 @@ const resource = {
       serviceTitle6: "",
       serviceText6:
         "Создайте своё будущее с криптовалютой — новой эрой финансов! Откройте для себя мир неограниченных возможностей с нашими передовыми криптовалютными сервисами. Наша платформа предлагает простой и безопасный доступ к миру цифровых валют, где конфиденциальность, скорость и надёжность встречаются вместе.",
-      startProject: "Начать работать с нами",
+      startProject: "Узнать больше",
       sliderTitle1: "Недвижимость",
       sliderText1:
         "Мы являемся Вашим надежным партнером в мире недвижимости, создавая и укрепляя бренды, обеспечивая узнаваемость объектов недвижимости, разрабатывая уникальные сайты и лендинги, оптимизируя настройки поисковых систем и эффективные маркетинговые стратегии, помогающие успешно взаимодействовать с целевой аудиторией рынка недвижимости.",
@@ -256,7 +256,7 @@ const resource = {
       sliderTitle3: "Cafes/restaurants",
       sliderText3:
         "We work with cafes and restaurants to help build unique brands, attract customers through online promotion, develop attractive websites and lendings, and optimise settings for search engines to ensure your establishment thrives in the food service industry.",
-      startProject: "Start Project With Us",
+      startProject: "Learn More",
       serviceTitle1: "",
       serviceText1:
         "Our marketing agency offers effective promotion of your business through social media. We create unique strategies optimised for your audience to maximise visibility and engagement, ensuring successful results for your advertising campaign.",

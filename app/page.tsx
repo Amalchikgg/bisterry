@@ -9,6 +9,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useSwipeable } from "react-swipeable";
+import Zoom from "react-reveal/Zoom";
 
 export default function Home() {
   const { t } = useTranslation();
@@ -127,7 +128,7 @@ export default function Home() {
   };
   return (
     <Container>
-      <main>
+      <main className='element'>
         <section className='mt-[80px] motion-safe:mt-10 mb-[46px] mobile:mb-4'>
           <p className='text-[#023047] text-center text-[60px] mobile:text-[32px] font-bold mb-5 mobile:mb-9'>
             {t("mainTitle")}{" "}
@@ -262,31 +263,33 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className='bg-[#000814] rounded-[30px] pt-[45px] pb-[60px] pl-[60px] pr-[88px] mb-[125px] mobile:mb-10 mobile:p-[28px]'>
-          <p className='text-white text-[85px] font-bold pr-10 leading-[1.3] mb-[38px] mobile:mb-[26px] mobile:text-[36px] mobile:pr-0'>
-            {t("effectiveSection")}
-          </p>
-          <div className='flex justify-between items-end mobile:flex-col mobile:items-center'>
-            <p className='text-white text-[24px] max-w-[750px] leading-[1.3] mobile:text-base mobile:mb-[37px]'>
-              {t("effectiveText")}
+        <Zoom left>
+          <section className='bg-[#000814] rounded-[30px] pt-[45px] pb-[60px] pl-[60px] pr-[88px] mb-[125px] mobile:mb-10 mobile:p-[28px]'>
+            <p className='text-white text-[85px] font-bold pr-10 leading-[1.3] mb-[38px] mobile:mb-[26px] mobile:text-[36px] mobile:pr-0'>
+              {t("effectiveSection")}
             </p>
-            <Link
-              href={"/contacts"}
-              className='w-[277px] h-[87px] bg-[#023047] rounded-[30px] flex items-center justify-center mobile:w-[281px] mobile:h-[43px]'
-            >
-              <p className='text-white text-[25px] font-bold mr-3 mobile:mr-0 mobile:uppercase mobile:text-[14px]'>
-                {t("contactUs")}
+            <div className='flex justify-between items-end mobile:flex-col mobile:items-center'>
+              <p className='text-white text-[24px] max-w-[750px] leading-[1.3] mobile:text-base mobile:mb-[37px]'>
+                {t("effectiveText")}
               </p>
-              <Image
-                src={"/icons/arrow.svg"}
-                alt='arrow'
-                width={45}
-                height={0}
-                className='mobile:hidden'
-              />
-            </Link>
-          </div>
-        </section>
+              <Link
+                href={"/contacts"}
+                className='w-[277px] h-[87px] bg-[#023047] rounded-[30px] flex items-center justify-center mobile:w-[281px] mobile:h-[43px]'
+              >
+                <p className='text-white text-[25px] font-bold mr-3 mobile:mr-0 mobile:uppercase mobile:text-[14px]'>
+                  {t("contactUs")}
+                </p>
+                <Image
+                  src={"/icons/arrow.svg"}
+                  alt='arrow'
+                  width={45}
+                  height={0}
+                  className='mobile:hidden'
+                />
+              </Link>
+            </div>
+          </section>
+        </Zoom>
         <section className='mb-[186px] mobile:mb-[62px]'>
           <div className='flex justify-between items-center mb-[106px] mobile:mb-10 mobile:flex-col '>
             <p className='text-[#000814] text-[64px] font-bold mobile:text-[32px] mobile:mb-[37px]'>
@@ -373,50 +376,62 @@ export default function Home() {
             {t("brands")}
           </p>
           <div className='flex justify-around items-center mb-[98px] mobile:flex-col'>
-            <Image
-              src={"/images/brand1.png"}
-              alt='brand'
-              width={282}
-              height={79}
-              className='mobile:mb-[99px] mobile:w-[179px] mobile:h-[51px]'
-            />
-            <Image
-              src={"/images/brand2.png"}
-              alt='brand'
-              width={93}
-              height={92}
-              className='mobile:mb-[99px] mobile:w-[59px] mobile:h-[59px]'
-            />
-            <Image
-              src={"/images/brand3.png"}
-              alt='brand'
-              width={210}
-              height={104}
-              className='mobile:w-[150px] mobile:h-[74px]'
-            />
+            <Zoom>
+              <Image
+                src={"/images/brand1.png"}
+                alt='brand'
+                width={282}
+                height={79}
+                className='mobile:mb-[99px] mobile:w-[179px] mobile:h-[51px]'
+              />
+            </Zoom>
+            <Zoom>
+              <Image
+                src={"/images/brand2.png"}
+                alt='brand'
+                width={93}
+                height={92}
+                className='mobile:mb-[99px] mobile:w-[59px] mobile:h-[59px]'
+              />
+            </Zoom>
+            <Zoom>
+              <Image
+                src={"/images/brand3.png"}
+                alt='brand'
+                width={210}
+                height={104}
+                className='mobile:w-[150px] mobile:h-[74px]'
+              />
+            </Zoom>
           </div>
           <div className='flex justify-around items-center pl-10 mobile:pl-0 mobile:flex-col'>
-            <Image
-              src={"/images/brand4.png"}
-              alt='brand'
-              width={283}
-              height={69}
-              className='mobile:mb-[99px] mobile:w-[161px] mobile:h-[39px]'
-            />
-            <Image
-              src={"/images/brand5.png"}
-              alt='brand'
-              width={193}
-              height={121}
-              className='mobile:mb-[99px] mobile:w-[141px] mobile:h-[89px]'
-            />
-            <Image
-              src={"/images/brand6.png"}
-              alt='brand'
-              width={251}
-              height={76}
-              className='mobile:w-[201px] mobile:h-[60px]'
-            />
+            <Zoom>
+              <Image
+                src={"/images/brand4.png"}
+                alt='brand'
+                width={283}
+                height={69}
+                className='mobile:mb-[99px] mobile:w-[161px] mobile:h-[39px]'
+              />
+            </Zoom>
+            <Zoom>
+              <Image
+                src={"/images/brand5.png"}
+                alt='brand'
+                width={193}
+                height={121}
+                className='mobile:mb-[99px] mobile:w-[141px] mobile:h-[89px]'
+              />
+            </Zoom>
+            <Zoom>
+              <Image
+                src={"/images/brand6.png"}
+                alt='brand'
+                width={251}
+                height={76}
+                className='mobile:w-[201px] mobile:h-[60px]'
+              />
+            </Zoom>
           </div>
         </section>
         <section className='mb-[162px] mobile:mb-20'>
