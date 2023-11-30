@@ -35,10 +35,6 @@ const Header = () => {
       title: "Email Marketing",
       link: "/email",
     },
-    {
-      title: "Crypto & Trading Platforms",
-      link: "/cryptocurrency",
-    },
   ];
   const dropdownRef = useRef<HTMLDivElement>(null);
   const handleChangeLanguage = (lng: string) => () => {

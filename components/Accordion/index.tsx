@@ -30,7 +30,7 @@ const Accordion = ({ text, title, link, index, className }: Props) => {
           <p
             className={`text-[#000814] ${
               active && "!text-[#5390D9]"
-            } text-[40px] mobile:text-[24px] mobile:font-medium mobile:text-center`}
+            } text-[40px] hover:text-[#5390D9] mobile:text-[24px] mobile:font-medium mobile:text-center`}
           >
             {title}
           </p>

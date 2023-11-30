@@ -35,6 +35,12 @@ export default function Home() {
       image: "/images/slide3.png",
       id: 3,
     },
+    {
+      title: t("sliderTitle4"),
+      text: t("sliderText4"),
+      image: "/images/slider4.png",
+      id: 4,
+    },
   ];
   const array = [
     {
@@ -61,11 +67,6 @@ export default function Home() {
       title: "EMAIL MARKETING",
       text: t("serviceText5"),
       link: "/email",
-    },
-    {
-      title: "CRYPTO & TRADING PLATFORMS",
-      text: t("serviceText6"),
-      link: "/cryptocurrency",
     },
   ];
   const comments = [
@@ -290,7 +291,7 @@ export default function Home() {
             </div>
           </section>
         </Zoom>
-        <section className='mb-[186px] mobile:mb-[62px]'>
+        <section id='services' className='mb-[186px] mobile:mb-[62px]'>
           <div className='flex justify-between items-center mb-[106px] mobile:mb-10 mobile:flex-col '>
             <p className='text-[#000814] text-[64px] font-bold mobile:text-[32px] mobile:mb-[37px]'>
               {t("ourServices")}
@@ -312,7 +313,7 @@ export default function Home() {
             ))}
           </div>
         </section>
-        <section className='mb-[122px] mobile:mb-[68px]'>
+        <section id='niches' className='mb-[122px] mobile:mb-[68px]'>
           <p className='text-[#000814] text-[75px] font-semibold mobile:font-bold mobile:mb-[47px] mb-[82px] mobile:text-[32px] mobile:text-center'>
             {t("ourMostPopular")}
             <span className='text-[#5390D9] mobile:text-[#000814]'>

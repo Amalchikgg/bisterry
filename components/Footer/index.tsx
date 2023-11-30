@@ -1,14 +1,49 @@
 "use client";
-import React, { useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import { useTranslation } from "react-i18next";
 import Container from "../Container";
 import emailjs from "@emailjs/browser";
 import Zoom from "react-reveal/Zoom";
+import LinkScroll from "../Link";
+import FooterQuotes from "../FooterQuotes";
 
 const Footer = () => {
   const { t } = useTranslation();
   const form = useRef(null);
+  const [activeComment, $activeComment] = useState(0);
+  const quotes = [
+    {
+      id: 0,
+      text: t("quotes1"),
+      logo: "/icons/logoFooter1.svg",
+      name: t("javohir"),
+      worker: t("webDesigner"),
+    },
+    {
+      id: 1,
+      text: t("quotes2"),
+      logo: "/icons/avatar.svg",
+      name: t("amir"),
+      worker: "CEO Bisterry",
+    },
+    {
+      id: 2,
+      text: t("quotes3"),
+      logo: "/icons/logoFooter2.svg",
+      name: t("angelina"),
+      worker: t("webDesigner"),
+    },
+  ];
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      $activeComment((prevIndex) => (prevIndex + 1) % quotes.length);
+    }, 5000);
+
+    return () => clearInterval(intervalId);
+  }, [quotes.length]);
+
   const sendEmail = (e: any) => {
     e.preventDefault();
 
@@ -37,32 +72,17 @@ const Footer = () => {
   return (
     <footer className='bg-[#000814] pt-[90px] pb-[50px] px-[54px] mobile:px-[18px] mobile:pt-[40px] rounded-[30px_30px_0px_0px]'>
       <Container>
-        <Zoom top>
-          <div className='ml-[136px] mb-[60px] mobile:ml-0'>
-            <p className='text-white text-[57px] mb-[100px] leading-[1.3] mobile:text-[24px] mobile:mb-[27px]'>
-              {t("footerText1")}
-            </p>
-            <div className='flex items-center mobile:flex-col mobile:items-start'>
-              <Image
-                src={"/images/avatar.png"}
-                alt='avatar'
-                width={120}
-                height={120}
-                className='mr-[22px] mobile:hidden'
-              />
-              <p className='text-white text-[32px] mobile:text-[24px] font-bold leading-[1.1]'>
-                Amir Mirmakhmudov
-                <br />{" "}
-                <span className='font-normal text-[20px] mobile:hidden'>
-                  CEO Bisterry
-                </span>
-              </p>
-              <p className='mobile:block hidden text-[20px] mt-[10px] text-white'>
-                CEO Bisterry
-              </p>
-            </div>
-          </div>
-        </Zoom>
+        {quotes.map((data) => (
+          <FooterQuotes
+            key={data.id}
+            logo={data.logo}
+            text={data.text}
+            name={data.name}
+            worker={data.worker}
+            id={data.id}
+            index={activeComment}
+          />
+        ))}
         <Zoom>
           <div className='rounded-[30px] px-[53px] mobile:px-0 bg-[#023047] pt-[111px] mobile:pt-9 mobile:pb-12 pb-[81px]'>
             <p className='text-white text-center font-bold text-[64px] mb-[45px] mobile:hidden'>
@@ -126,12 +146,16 @@ const Footer = () => {
                 <p className='text-[20px] font-semibold text-white mb-[13px]'>
                   {t("aboutUs")}
                 </p>
-                <p className='text-[20px] font-semibold text-white mb-[13px]'>
-                  {t("ourAreas")}
-                </p>
-                <p className='text-[20px] font-semibold text-white'>
-                  {t("services")}
-                </p>
+                <LinkScroll
+                  title={t("ourNiches")}
+                  link='niches'
+                  className='text-[20px] block font-semibold text-white mb-[13px]'
+                />
+                <LinkScroll
+                  title={t("services")}
+                  link='services'
+                  className='text-[20px] font-semibold text-white'
+                />
               </div>
               <div className='mobile:hidden'>
                 <p className='text-[24px] text-white font-bold mb-[41px]'>

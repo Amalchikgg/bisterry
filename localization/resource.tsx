@@ -35,8 +35,8 @@ const resource = {
       analysisReport: "Анализ и Отчетность",
       formText: "Оставьте свои контакты, и мы свяжемся с Вами!",
       name: "ИМЯ",
-      phoneNumber: "НОМЕР ТЕЛЕФОНА",
-      yourMessage: "ВАШЕ СООБЩЕНИЕ",
+      phoneNumber: "ТЕЛЕФОН",
+      yourMessage: "СООБЩЕНИЕ",
       digital: "Цифровой",
       marketingDig: "Маркетинг",
       compStrategy: "Комплексные Стратегии",
@@ -109,6 +109,9 @@ const resource = {
       sliderTitle3: "Кафе/Рестораны",
       sliderText3:
         "Мы работаем с кафе и ресторанами, помогая создавать уникальные бренды, привлекать клиентов с помощью продвижения в Интернете, разрабатывать привлекательные сайты и лендинги, оптимизировать настройки для поисковых систем, чтобы обеспечить процветание вашего заведения в сфере общественного питания.",
+      sliderTitle4: "Криптовалюта",
+      sliderText4:
+        "Создайте своё будущее с криптовалютой — новой эрой финансов! Откройте для себя мир неограниченных возможностей с нашими передовыми криптовалютными сервисами. Наша платформа предлагает простой и безопасный доступ к миру цифровых валют, где конфиденциальность, скорость и надёжность встречаются вместе.",
       feedbackText1:
         "Выбор агентства BISTERRY AGENCY стал решающим фактором для моего бизнеса в сфере недвижимости. Их опыт в области брендинга придал моим объектам уникальность, выделив их на конкурентном рынке. Реализованные ими стратегии цифрового маркетинга не только привлекли больше потенциальных покупателей, но и помогли мне быстрее заключать сделки. Инновационные целевые страницы и виртуальные туры, разработанные ими, обеспечили моим клиентам замечательный опыт работы в Интернете.",
       feedbackName1: "Руслан",
@@ -175,10 +178,35 @@ const resource = {
       cryptocurrencyTitle5: "Решения и Интеграция",
       cryptocurrencyText5:
         "Предложение технологических решений, включая разработку криптовалютных кошельков, интеграцию платежных систем, и создание индивидуализированных блокчейн-платформ для улучшения операционной эффективности проектов.",
+      ourNiches: "Наши сферы",
+      javohir: "Джавохир Ибрагимов",
+      angelina: "Ангелина",
+      webDesigner: "Веб-дизайнер",
+      targetologist: "таргетолог",
+      quotes1:
+        '"В цифровом космосе господствуют веб-дизайнеры, создающие интерфейсы, которые танцуют с жизнью. С каждым нажатием клавиши они вплетают магию в обыденность, вдыхая жизнь в цифровое царство".',
+      quotes2:
+        '"Ваш бренд обладает нереализованным потенциалом, жаждущим искры, которая зажжет его на пути к окончательной реализации. Маркетинг - это та самая искра, катализатор, который превратит потенциал вашего бренда в реальность, превосходящую ваши самые смелые мечты".',
+      quotes3:
+        '"В сложном оркестре маркетинга специалист по целевой аудитории владеет палочкой точности, основанной на данных, оркеструя гармоничное сочетание понимания потребителей и сообщений бренда для создания симфонии резонанса и вовлечения".',
     },
   },
   en: {
     translation: {
+      quotes1:
+        "“In the digital cosmos, web designers reign supreme, crafting interfaces that dance with life. With every keystroke, they weave magic into the mundane, breathing life into the digital realm.”",
+      quotes2:
+        "“Your brand possesses untapped potential, yearning for the spark that will ignite its journey towards its ultimate fulfillment. Marketing is that spark, the catalyst that will transform your brand's potential into a reality that exceeds your wildest dreams.”",
+      quotes3:
+        "“In the intricate orchestra of marketing, the target specialist wields the baton of data-driven precision, orchestrating a harmonious blend of consumer insights and brand messaging to create a symphony of resonance and engagement.”",
+      targetologist: "Targetologist",
+      webDesigner: "Web-designer",
+      javohir: "Javohir Ibragimov",
+      angelina: "Angelina",
+      ourNiches: "Our niches",
+      sliderTitle4: "Crypto & Trading",
+      sliderText4:
+        "Shape your future with cryptocurrency — the new era of finance! Discover a world of unlimited possibilities with our cutting-edge cryptocurrency services. Our platform offers a simple and secure gateway to the digital currency world, where privacy, speed, and reliability converge.",
       cryptocurrencyTitle1:
         "Blockchain Technology Development and Implementation",
       cryptocurrencyText1:
@@ -318,7 +346,7 @@ const resource = {
       digital: "Digital",
       marketingDig: "Marketing",
       name: "NAME",
-      phoneNumber: "PHONE NUMBER",
+      phoneNumber: "PHONE",
       yourMessage: "YOUR MESSAGE",
       strategies: "Strategies",
       formText: "Leave your contacts and we'll get back to you!",

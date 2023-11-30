@@ -32,10 +32,6 @@ const Burger = () => {
       title: "Email Marketing",
       link: "/email",
     },
-    {
-      title: "Crypto & Trading Platforms",
-      link: "/cryptocurrency",
-    },
   ];
 
   console.log(pathname === links[0].link);
