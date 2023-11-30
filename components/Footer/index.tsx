@@ -146,7 +146,7 @@ const Footer = () => {
                 </p>
                 <Link
                   href={"/aboutus"}
-                  className='text-[20px] font-semibold text-white mb-[13px]'
+                  className='text-[20px] block font-semibold text-white mb-[13px]'
                 >
                   {t("aboutUs")}
                 </Link>
