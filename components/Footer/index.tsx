@@ -7,6 +7,7 @@ import emailjs from "@emailjs/browser";
 import Zoom from "react-reveal/Zoom";
 import LinkScroll from "../Link";
 import FooterQuotes from "../FooterQuotes";
+import Link from "next/link";
 
 const Footer = () => {
   const { t } = useTranslation();
@@ -32,7 +33,7 @@ const Footer = () => {
       text: t("quotes3"),
       logo: "/icons/logoFooter2.svg",
       name: t("angelina"),
-      worker: t("webDesigner"),
+      worker: t("targetologist"),
     },
   ];
 
@@ -143,9 +144,12 @@ const Footer = () => {
                 <p className='text-[24px] text-white font-bold mb-[41px]'>
                   {t("home")}
                 </p>
-                <p className='text-[20px] font-semibold text-white mb-[13px]'>
+                <Link
+                  href={"/aboutus"}
+                  className='text-[20px] font-semibold text-white mb-[13px]'
+                >
                   {t("aboutUs")}
-                </p>
+                </Link>
                 <LinkScroll
                   title={t("ourNiches")}
                   link='niches'

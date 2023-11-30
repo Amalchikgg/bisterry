@@ -135,9 +135,11 @@ const Header = () => {
             >
               ENG
             </p>
-            <button className='bg-[#5390D9] rounded-[30px] h-[46px] text-[20px] text-white font-extrabold w-[240px]'>
-              {t("contactUs")}
-            </button>
+            <Link href={"/contacts"}>
+              <button className='bg-[#5390D9] rounded-[30px] h-[46px] text-[20px] text-white font-extrabold w-[240px]'>
+                {t("contactUs")}
+              </button>
+            </Link>
           </div>
         </div>
       </Container>

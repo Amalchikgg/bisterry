@@ -93,7 +93,7 @@ const Form = () => {
               <textarea
                 id='message'
                 name='message'
-                className='outline-none w-full placeholder:text-white pr-5 mobile:pl-[140px] text-[20px] text-white font-bold bg-[#5390D9] h-[200px] resize-none pl-[145px] pt-[15px] mobile:pt-[9px] mobile:text-base rounded-[30px]'
+                className='outline-none w-full placeholder:text-white pr-5 mobile:pl-[140px] text-[20px] text-white font-bold bg-[#5390D9] h-[200px] resize-none pl-[145px] pt-[15px] mobile:pt-[9  px] mobile:text-base rounded-[30px]'
               />
               <label
                 htmlFor='message'

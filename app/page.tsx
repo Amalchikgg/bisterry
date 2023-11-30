@@ -9,6 +9,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useSwipeable } from "react-swipeable";
+import { Link as ScrollLink } from "react-scroll";
 import Zoom from "react-reveal/Zoom";
 
 export default function Home() {
@@ -173,18 +174,26 @@ export default function Home() {
               height={582}
               className='absolute top-[0] '
             />
-            <div className='bg-[#5390D9] flex items-center cursor-pointer justify-center rounded-[30px] w-[268px] h-[86px] absolute top-0 right-[250px]'>
-              <p className='text-white text-[25px] font-bold mr-3 uppercase'>
-                {t("knowMore")}
-              </p>
-              <Image
-                src={"/icons/arrow.svg"}
-                alt='arrow'
-                width={40}
-                height={0}
-                className=''
-              />
-            </div>
+            <ScrollLink
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              to={"services"}
+            >
+              <div className='bg-[#5390D9] flex items-center cursor-pointer justify-center rounded-[30px] w-[268px] h-[86px] absolute top-0 right-[250px]'>
+                <p className='text-white text-[25px] font-bold mr-3 uppercase'>
+                  {t("knowMore")}
+                </p>
+                <Image
+                  src={"/icons/arrow.svg"}
+                  alt='arrow'
+                  width={40}
+                  height={0}
+                  className=''
+                />
+              </div>
+            </ScrollLink>
             <Image
               src={"/icons/union2.svg"}
               alt='union2'
@@ -250,18 +259,26 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div className='bg-[#5390D9] flex items-center cursor-pointer justify-center rounded-[30px] w-[338px] h-[75px]'>
-              <p className='text-white font-bold mr-3 uppercase'>
-                {t("knowMore")}
-              </p>
-              <Image
-                src={"/icons/arrow.svg"}
-                alt='arrow'
-                width={40}
-                height={0}
-                className=''
-              />
-            </div>
+            <ScrollLink
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              to={"services"}
+            >
+              <div className='bg-[#5390D9] flex items-center cursor-pointer justify-center rounded-[30px] w-[338px] h-[75px]'>
+                <p className='text-white font-bold mr-3 uppercase'>
+                  {t("knowMore")}
+                </p>
+                <Image
+                  src={"/icons/arrow.svg"}
+                  alt='arrow'
+                  width={40}
+                  height={0}
+                  className=''
+                />
+              </div>
+            </ScrollLink>
           </div>
         </section>
         <Zoom left>
@@ -277,9 +294,12 @@ export default function Home() {
                 href={"/contacts"}
                 className='w-[277px] h-[87px] bg-[#023047] rounded-[30px] flex items-center justify-center mobile:w-[281px] mobile:h-[43px]'
               >
-                <p className='text-white text-[25px] font-bold mr-3 mobile:mr-0 mobile:uppercase mobile:text-[14px]'>
+                <Link
+                  href={"/contacts"}
+                  className='text-white text-[25px] font-bold mr-3 mobile:mr-0 mobile:uppercase mobile:text-[14px]'
+                >
                   {t("contactUs")}
-                </p>
+                </Link>
                 <Image
                   src={"/icons/arrow.svg"}
                   alt='arrow'
