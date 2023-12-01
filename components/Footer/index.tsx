@@ -45,31 +45,6 @@ const Footer = () => {
     return () => clearInterval(intervalId);
   }, [quotes.length]);
 
-  const sendEmail = (e: any) => {
-    e.preventDefault();
-
-    if (form.current) {
-      emailjs
-        .sendForm(
-          "service_svoweo6",
-          "template_es356zw",
-          form.current,
-          "WtqcTZIikxV6CV2Qj"
-        )
-        .then(
-          (result) => {
-            console.log(result.text);
-            e.target.reset();
-            alert(t("formSubmit"));
-          },
-          (error) => {
-            console.log(error.text);
-            console.log("error");
-            alert(error.text);
-          }
-        );
-    }
-  };
   return (
     <footer className='bg-[#000814] pt-[90px] pb-[50px] px-[54px] mobile:px-[18px] mobile:pt-[40px] rounded-[30px_30px_0px_0px]'>
       <Container>
@@ -110,7 +85,6 @@ const Footer = () => {
             </p>
             <form
               ref={form}
-              onSubmit={sendEmail}
               className='flex items-center justify-center mb-[91px] mobile:mb-[63px] mobile:flex-col'
             >
               <input

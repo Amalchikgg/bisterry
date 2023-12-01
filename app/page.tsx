@@ -294,12 +294,9 @@ export default function Home() {
                 href={"/contacts"}
                 className='w-[277px] h-[87px] bg-[#023047] rounded-[30px] flex items-center justify-center mobile:w-[281px] mobile:h-[43px]'
               >
-                <Link
-                  href={"/contacts"}
-                  className='text-white text-[25px] font-bold mr-3 mobile:mr-0 mobile:uppercase mobile:text-[14px]'
-                >
+                <p className='text-white text-[25px] font-bold mr-3 mobile:mr-0 mobile:uppercase mobile:text-[14px]'>
                   {t("contactUs")}
-                </Link>
+                </p>
                 <Image
                   src={"/icons/arrow.svg"}
                   alt='arrow'

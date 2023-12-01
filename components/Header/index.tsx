@@ -114,7 +114,9 @@ const Header = () => {
                   <Link
                     href={link}
                     key={link}
-                    className={`text-white font-semibold text-[20px] mb-3 hover:text-[#5390D9] ${
+                    className={`text-white ${
+                      !open && "hidden"
+                    } font-semibold text-[20px] mb-3 hover:text-[#5390D9] ${
                       pathname.includes(link) && "!text-[#5390D9]"
                     }`}
                   >

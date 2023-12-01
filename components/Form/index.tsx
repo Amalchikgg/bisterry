@@ -34,12 +34,12 @@ const Form = () => {
     }
   };
   return (
-    <Zoom>
-      <form
-        ref={form}
-        onSubmit={sendEmail}
-        className='mb-[169px] mobile:mb-14 mobile:-mt-10'
-      >
+    <form
+      ref={form}
+      onSubmit={sendEmail}
+      className='mb-[169px] mobile:mb-14 mobile:-mt-10'
+    >
+      <Zoom>
         <div className='flex justify-between items-center mb-[65px] mobile:mb-5 mobile:flex-col mobile:w-full'>
           <p className='text-[#023047] font-semibold text-[85px] mobile:text-[28px] w-[607px] mobile:w-auto mobile:mb-5 leading-[1.2]'>
             {t("formText")}
@@ -93,7 +93,7 @@ const Form = () => {
               <textarea
                 id='message'
                 name='message'
-                className='outline-none w-full placeholder:text-white pr-5 mobile:pl-[140px] text-[20px] text-white font-bold bg-[#5390D9] h-[200px] resize-none pl-[145px] pt-[15px] mobile:pt-[9  px] mobile:text-base rounded-[30px]'
+                className='outline-none w-full placeholder:text-white pr-5 mobile:pl-[140px] text-[20px] text-white font-bold bg-[#5390D9] h-[200px] resize-none pl-[145px] pt-[15px] mobile:pt-[9px] mobile:text-base rounded-[30px]'
               />
               <label
                 htmlFor='message'
@@ -119,8 +119,8 @@ const Form = () => {
             className='absolute top-[45px] right-[50px] mobile:top-[22px] mobile:right-5 mobile:w-10'
           />
         </div>
-      </form>
-    </Zoom>
+      </Zoom>
+    </form>
   );
 };
 
