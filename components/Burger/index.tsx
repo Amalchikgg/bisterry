@@ -34,7 +34,6 @@ const Burger = () => {
     },
   ];
 
-  console.log(pathname === links[0].link);
 
   const changeLanguage = (language: string) => () => {
     i18n.changeLanguage(language);

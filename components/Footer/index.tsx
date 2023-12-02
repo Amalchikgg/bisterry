@@ -13,6 +13,7 @@ const Footer = () => {
   const { t } = useTranslation();
   const form = useRef(null);
   const [activeComment, $activeComment] = useState(0);
+  const [email, $email] = useState("");
   const quotes = [
     {
       id: 0,
@@ -44,6 +45,31 @@ const Footer = () => {
 
     return () => clearInterval(intervalId);
   }, [quotes.length]);
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+
+    try {
+      const response = await fetch("/api/footer", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ email: email }),
+      });
+
+      const data = await response.json();
+
+      if (data.success) {
+        $email("");
+        alert(t("formSubmit"));
+      } else {
+        console.error("Failed to send email:", data.error);
+      }
+    } catch (error) {
+      console.error("Error sending email:", error);
+    }
+  };
 
   return (
     <footer className='bg-[#000814] pt-[90px] pb-[50px] px-[54px] mobile:px-[18px] mobile:pt-[40px] rounded-[30px_30px_0px_0px]'>
@@ -85,9 +111,12 @@ const Footer = () => {
             </p>
             <form
               ref={form}
+              onSubmit={handleSubmit}
               className='flex items-center justify-center mb-[91px] mobile:mb-[63px] mobile:flex-col'
             >
               <input
+                value={email}
+                onChange={(e) => $email(e.target.value)}
                 id='email'
                 name='user_email'
                 type='email'
