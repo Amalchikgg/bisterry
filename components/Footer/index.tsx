@@ -154,26 +154,32 @@ const Footer = () => {
                   {t("socialMedia")}
                 </p>
                 <div className='flex items-center justify-center'>
-                  <Image
-                    src={"/icons/telegram.svg"}
-                    alt='telegram'
-                    width={35}
-                    height={35}
-                    className='mr-[23px]'
-                  />
-                  <Image
-                    src={"/icons/instagram.svg"}
-                    alt='instagram'
-                    width={35}
-                    height={35}
-                    className='mr-[23px]'
-                  />
-                  <Image
-                    src={"/icons/whatsapp.svg"}
-                    alt='whatsapp'
-                    width={35}
-                    height={35}
-                  />
+                  <Link href={"https://t.me/bisterry"}>
+                    <Image
+                      src={"/icons/telegram.svg"}
+                      alt='telegram'
+                      width={35}
+                      height={35}
+                      className='mr-[23px]'
+                    />
+                  </Link>
+                  <Link href={"https://www.instagram.com/bisterry_agency/"}>
+                    <Image
+                      src={"/icons/instagram.svg"}
+                      alt='instagram'
+                      width={35}
+                      height={35}
+                      className='mr-[23px]'
+                    />
+                  </Link>
+                  <Link href={"https://wa.me/447729654560"}>
+                    <Image
+                      src={"/icons/whatsapp.svg"}
+                      alt='whatsapp'
+                      width={35}
+                      height={35}
+                    />
+                  </Link>
                 </div>
               </div>
             </div>

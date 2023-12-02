@@ -16,7 +16,7 @@ const resource = {
       enterEmail: "Введите свой E-mail",
       joinUs: "ПРИСОЕДИНИТЬСЯ",
       marketingAgency:
-        "Маркетинговое агентство, которое всегда одержимо результатами",
+        "Оставьте свой контактный e-mail и получите бесплатную консультацию наших специалистов.",
       innovativeAdvertising:
         "2023 Инновационные рекламные услуги, все права защищены.",
       home: "Главная",
@@ -377,7 +377,7 @@ const resource = {
       enterEmail: "Enter your email address",
       joinUs: "JOIN US",
       marketingAgency:
-        "A marketing agency, which is always obsessed with the results",
+        "Leave your contact email and get a free consultation with our experts.",
       innovativeAdvertising:
         "2023 Innovative Advertising Services, All Rights Reserved.",
     },
