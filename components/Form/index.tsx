@@ -14,6 +14,7 @@ const Form = () => {
     phoneNumber: "",
   });
   const form = useRef(null);
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
@@ -29,8 +30,13 @@ const Form = () => {
       const data = await response.json();
 
       if (data.success) {
-        setFormData({ name: "", email: "", phoneNumber: "", message: "" });
         alert(t("formSubmit"));
+        setFormData({
+          name: "",
+          email: "",
+          phoneNumber: "",
+          message: "",
+        });
       } else {
         console.error("Failed to send email:", data.error);
       }
@@ -61,6 +67,7 @@ const Form = () => {
           <div className='mobile:w-full'>
             <div className='relative inline-block mobile:w-full'>
               <input
+                value={formData.name}
                 onChange={handleChange}
                 id='name'
                 name='name'
@@ -77,6 +84,7 @@ const Form = () => {
             <div className='mb-5 mobile:flex mobile:flex-col'>
               <div className='relative inline-block mobile:w-full'>
                 <input
+                  value={formData.phoneNumber}
                   onChange={handleChange}
                   id='phoneumber'
                   name='phoneNumber'
@@ -92,6 +100,7 @@ const Form = () => {
               </div>
               <div className='relative inline-block'>
                 <input
+                  value={formData.email}
                   onChange={handleChange}
                   id='email'
                   name='email'
@@ -108,6 +117,7 @@ const Form = () => {
             </div>
             <div className='relative block'>
               <textarea
+                value={formData.message}
                 onChange={handleChange}
                 id='message'
                 name='message'
