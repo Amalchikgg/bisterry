@@ -21,6 +21,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en'>
+      <title>Bisterry</title>
+      <meta name='description' content='Bisterry' />
+      <meta name='keywords' content='Bisterry' />
+      <meta name='author' content='Bisterry' />
+      <meta property='og:title' content='Bisterry' />
+      <meta property='og:description' content='Bisterry' />
       <body className={gilroy.className}>
         <Header />
         {children}
